@@ -1,0 +1,33 @@
+{
+  "name": "@kubohiroya/turbowarp-plus-editor-test-runtime-blocks",
+  "version": "0.1.0",
+  "description": "The TurboWarp Scratch Blocks build that the minimal TurboWarp Plus Editor runtime loads, at the revision the Editor pins",
+  "type": "module",
+  "license": "GPL-3.0",
+  "author": "Hiroya Kubo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kubohiroya/turbowarp-plus-editor-test-runtime-blocks.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "README.ja.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "scratch-blocks": "git+https://github.com/TurboWarp/scratch-blocks.git#4113c5348e6b4c76da9071a1800a62ab96ef793f"
+  }
+}
