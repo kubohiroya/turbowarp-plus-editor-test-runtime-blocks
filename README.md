@@ -21,10 +21,12 @@ These are the Closure Compiler build files committed in TurboWarp/scratch-blocks
 
 `npm test` copies the files and checks that every script is present, comes from a pinned revision and parses.
 
+`npm run typecheck` runs `tsc` without emitting: it checks the JavaScript with `checkJs` and that `index.js` matches `index.d.ts`.
+
 To follow the Editor, change the revision in `package.json` to the one in the lockfile of the Editor's pinned scratch-gui, and raise the version.
 
 Publishing happens in `.github/workflows/release.yml`, when a `v<version>` tag is pushed, through npm Trusted Publishing.
 
 ## License
 
-GPL-3.0, the license of TurboWarp Scratch Blocks. See `LICENSE`.
+GPL-3.0-only, the license of TurboWarp Scratch Blocks (which declares it as `GPL-3.0` without "or later"). See `LICENSE`.

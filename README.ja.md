@@ -21,10 +21,12 @@
 
 `npm test` でファイルを写し、すべてのスクリプトがあること、固定したリビジョンから来ていること、構文として読めることを確かめます。
 
+`npm run typecheck` は `tsc` を出力なしで実行し、`checkJs` で JavaScript を検査するとともに、`index.js` が `index.d.ts` と食い違っていないことを確かめます。
+
 Editor に追従するときは、Editor が固定する scratch-gui の lockfile にあるリビジョンに `package.json` を合わせ、版を上げます。
 
 npm への公開は `.github/workflows/release.yml` が行います。`v<版>` のタグを push したときに、npm の Trusted Publisher で公開します。
 
 ## ライセンス
 
-GPL-3.0。TurboWarp Scratch Blocks のライセンスです。`LICENSE` を見てください。
+GPL-3.0-only。TurboWarp Scratch Blocks のライセンスです（上流は「or later」なしの `GPL-3.0` と表記しています）。`LICENSE` を見てください。
