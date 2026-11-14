@@ -37,6 +37,7 @@ jobs:
         # token instead of exchanging the workflow identity, so publishing fails with
         # "OIDC permission denied".
       - run: npm ci --ignore-scripts
+      - run: npm run typecheck
       - run: npm test
       - name: Check the tag names the package version
         run: |

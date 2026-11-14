@@ -1,7 +1,13 @@
 import {fileURLToPath} from 'node:url';
 
-/** The directory holding the Scratch Blocks scripts and `media/`. */
+/**
+ * The directory holding the Scratch Blocks scripts and `media/`.
+ * @type {typeof import('./index.d.ts').directory}
+ */
 export const directory = fileURLToPath(new URL('./dist/', import.meta.url));
-/** The scripts a page loads, in this order, as classic scripts. Together they define the global `Blockly`. */
+/**
+ * The scripts a page loads, in this order, as classic scripts. Together they define the global `Blockly`.
+ * @type {typeof import('./index.d.ts').scripts}
+ */
 export const scripts = ['blockly_compressed_vertical.js', 'blocks_compressed.js', 'blocks_compressed_vertical.js',
     'msg/messages.js', 'msg/scratch_msgs.js'];
