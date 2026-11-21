@@ -1,6 +1,6 @@
 {
   "name": "@kubohiroya/turbowarp-plus-editor-test-runtime-blocks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The TurboWarp Scratch Blocks build that the minimal TurboWarp Plus Editor runtime loads, at the revision the Editor pins",
   "type": "module",
   "license": "GPL-3.0-only",
