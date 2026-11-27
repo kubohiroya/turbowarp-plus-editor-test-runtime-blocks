@@ -29,7 +29,7 @@
     "test": "npm run build && node --test test/*.test.js"
   },
   "devDependencies": {
-    "@types/node": "26.6.6",
+    "@types/node": "26.6.11",
     "scratch-blocks": "git+https://github.com/TurboWarp/scratch-blocks.git#4113c5348e6b4c76da9071a1800a62ab96ef793f",
     "typescript": "7.0.2"
   }
